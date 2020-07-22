@@ -1,0 +1,60 @@
+.row {
+  padding-left: 4%;
+  color: white;
+}
+.row__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e5e5e5;
+}
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  height: 140px;
+  padding: 3vw;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.row__postersLarge {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  height: 260px;
+  padding: 20px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row__postersLarge::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 130px;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+.row__video {
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+.row__video:hover {
+  transform: scale(1.5);
+}
+
+.row__poster:hover {
+  transform: scale(1.5);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
